@@ -1,3 +1,12 @@
 .nav-b{
+    background-color: rgb(50, 236, 146);
+}
+h1{
+    background-color: rgb(13, 211, 122);
+}
+h5{
+    font-family: 'Times New Roman', Times,;
+}
+body{
     background-color: aliceblue;
 }
