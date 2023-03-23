@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+/* Amber 400-500-600 */
+/* Gray 100-500-900 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+html {
+  line-height: 1.15;
+  overflow-y: scroll;
+}
+
+.top {
+  height: 56px;
+  background-color: #212121;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.top header {
+  height: 56px;
+  background-color: #212121;
+  padding: 0 6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.top header .left {
+  display: flex;
+}
+.top header .left #logo_icon .fa-people-line {
+  color: #ffffff;
+}
+.top header .left #logo_text {
+  margin-left: 6px;
+}
+.top header .left #logo_text #fName {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 36.8px;
+  color: #ffffff;
+  border: none;
+  transition: color 0.2s;
+}
+.top header .left #logo_text #lName {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36.8px;
+  color: #42a5f5;
+  border: none;
+  margin-left: -3px;
+  transition: color 0.2s;
+}
+.top header .left:hover #logo_text #fName {
+  color: #ffc107;
+}
+.top header .left:hover #logo_text #lName {
+  color: #ffffff;
+}
+.top header .right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.top header .right ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 28px;
+}
+.top header .right ul li {
+  margin: 0px 32px 0px 0px;
+  font-weight: 500;
+}
+.top header .right ul a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.top header .right .search-box i {
+  color: #ffffff;
+}
+.top header .right .search-box input[type=text] {
+  height: 31px;
+  width: 185px;
+  font-size: 16px;
+  font-weight: 400;
+  border: 2px solid #ffc107;
+  text-align: center;
+  border-radius: 3px;
+}
+.top header .right .search-box input[type=text]:focus {
+  outline-color: #42a5f5;
+}
+.top header .right .search-box ::-moz-placeholder {
+  margin-left: 40px;
+}
+.top header .right .search-box ::placeholder {
+  margin-left: 40px;
+}/*# sourceMappingURL=profile.css.map */

@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+html {
+    line-height: 1.15;
+    overflow-y: scroll;
+}
+
+.top {
+    height: 56px;
+    background-color: $bg_black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+
+    header {
+        height: 56px;
+        background-color: $bg_black;
+        padding: 0 6%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .left {
+            display: flex;
+
+            #logo_icon {
+                .fa-people-line {
+                    color: $font_white;
+                }
+            }
+
+            #logo_text {
+                margin-left: 6px;
+
+                #fName {
+                    font-size: 32px;
+                    font-weight: 300;
+                    line-height: 36.8px;
+                    color: $font_white;
+                    border: none;
+                    transition: color 0.2s;
+                }
+
+                #lName {
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 36.8px;
+                    color: $bg_sky_blue;
+                    border: none;
+                    margin-left: -3px;
+                    transition: color 0.2s;
+
+                }
+            }
+
+            &:hover #logo_text #fName {
+                color: $font_yellow;
+            }
+
+            &:hover #logo_text #lName {
+                color: $font_white;
+            }
+        }
+
+        .right {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                color: $font_white;
+                font-size: 24px;
+                line-height: 28px;
+
+                li {
+                    margin: 0px 32px 0px 0px;
+                    font-weight: 500;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $font_white;
+                }
+            }
+
+            .search-box {
+                i {
+                    color: $font_white;
+                }
+
+                input[type=text] {
+                    height: 31px;
+                    width: 185px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    border: 2px solid $font_yellow;
+                    text-align: center;
+                    border-radius: 3px;
+
+                    &:focus {
+                        outline-color: $bg_sky_blue;
+                    }
+                }
+                ::placeholder
+                {
+                    margin-left: 40px;
+                }
+            }
+        }
+    }
+}
