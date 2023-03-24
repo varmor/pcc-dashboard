@@ -3,13 +3,14 @@
 
 footer
 {
-    height: 4rem;
-    padding: 0px 5%;
+    width: 100vw;
+    padding: 30px 5%;
     background-color: $bg_black;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 2;
+    margin-top: auto;
     a
     {
         text-decoration: none;
