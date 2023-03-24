@@ -9,7 +9,12 @@ html {
     line-height: 1.15;
     overflow-y: scroll;
 }
-
+body
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
 .top {
     height: 56px;
     background-color: $bg_black;
