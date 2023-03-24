@@ -90,10 +90,10 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
-.top header .right .search-box i {
+.top .search-box i {
   color: #ffffff;
 }
-.top header .right .search-box input[type=text] {
+.top .search-box input[type=text] {
   height: 31px;
   width: 185px;
   font-size: 16px;
@@ -102,16 +102,56 @@ body {
   text-align: center;
   border-radius: 3px;
 }
-.top header .right .search-box input[type=text]:focus {
+.top .search-box input[type=text]:focus {
   outline-color: #42a5f5;
 }
-.top header .right .search-box ::-moz-placeholder {
+.top .search-box ::-moz-placeholder {
   margin-left: 40px;
 }
-.top header .right .search-box ::placeholder {
+.top .search-box ::placeholder {
   margin-left: 40px;
 }
 
+@media only screen and (max-width: 760px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    margin: 0px 0px 8px 0px;
+  }
+  .search-box i {
+    color: #000000;
+    margin-right: 10px;
+  }
+  .search-box input[type=text] {
+    height: 35px;
+    width: 85%;
+    font-size: 16px;
+    font-weight: 400;
+    border: 2px solid #ffc107;
+    text-align: center;
+    border-radius: 3px;
+  }
+  .search-box input[type=text]:focus {
+    outline-color: #42a5f5;
+  }
+  .search-box ::-moz-placeholder {
+    margin-left: 40px;
+  }
+  .search-box ::placeholder {
+    margin-left: 40px;
+  }
+}
+@media only screen and (min-width: 760px) {
+  .mobile {
+    display: none;
+  }
+}
 /* Amber 400-500-600 */
 /* Gray 100-500-900 */
 footer {
@@ -284,9 +324,6 @@ section main:hover {
 }
 
 @media only screen and (max-width: 900px) {
-  body {
-    background-color: lightblue;
-  }
   main aside {
     display: none;
   }

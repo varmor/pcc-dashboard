@@ -98,29 +98,77 @@ body
                 }
             }
 
-            .search-box {
-                i {
-                    color: $font_white;
-                }
+            
+        }
+    }
+    .search-box {
+        i {
+            color: $font_white;
+        }
 
-                input[type=text] {
-                    height: 31px;
-                    width: 185px;
-                    font-size: 16px;
-                    font-weight: 400;
-                    border: 2px solid $font_yellow;
-                    text-align: center;
-                    border-radius: 3px;
+        input[type=text] {
+            height: 31px;
+            width: 185px;
+            font-size: 16px;
+            font-weight: 400;
+            border: 2px solid $font_yellow;
+            text-align: center;
+            border-radius: 3px;
 
-                    &:focus {
-                        outline-color: $bg_sky_blue;
-                    }
-                }
-                ::placeholder
-                {
-                    margin-left: 40px;
-                }
+            &:focus {
+                outline-color: $bg_sky_blue;
             }
+        }
+        ::placeholder
+        {
+            margin-left: 40px;
         }
     }
 }
+
+@media only screen and (max-width: 760px) {
+    .desktop
+    {
+        display: none;
+    }
+    .mobile
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+        margin: 0px 0px 8px 0px;
+    }
+    .search-box {
+        i {
+            color: $font_black;
+            margin-right: 10px;
+        }
+
+        input[type=text] {
+            height: 35px;
+            width: 85%; //85%
+            font-size: 16px;
+            font-weight: 400;
+            border: 2px solid $font_yellow;
+            text-align: center;
+            border-radius: 3px;
+
+            &:focus {
+                outline-color: $bg_sky_blue;
+            }
+        }
+        ::placeholder
+        {
+            margin-left: 40px;
+        }
+    }
+  }
+
+  @media only screen and (min-width: 760px){
+    .mobile
+    {
+        display: none;
+    }
+  }
