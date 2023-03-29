@@ -74,7 +74,7 @@ section {
                         overflow: hidden;
                         text-overflow: ellipsis;
                         padding: 1.2rem 1rem 2rem !important;
-                        white-space: nowrap;
+                        // white-space: nowrap;
                     }
                 }
 
@@ -158,6 +158,7 @@ section {
                 outline: none;
                 color: $font_black;
                 transition: background-color 0.2s;
+                white-space: normal;
 
                 &:hover {
                     background-color: $bg_black;
@@ -186,5 +187,30 @@ section {
         {
             display: none;
         }
+    }
+  }
+@media only screen and (max-width:480px) {
+    section
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-left: 0px;
+        main
+        {
+            article
+            {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+    
+}
+// 760++
+  @media only screen and (min-width: 760px){
+    .mobile
+    {
+        display: none;
     }
   }
