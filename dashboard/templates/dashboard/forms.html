@@ -1,0 +1,40 @@
+{% extends 'dashboard/base.html' %} 
+{% block content %}
+<form class="row g-3 container">
+    <div class="col-md-4">
+      <label for="validationDefault01" class="form-label">First name</label>
+      <input type="text" class="form-control" id="first_name" placeholder="First Name" required>
+    </div>
+    <div class="col-md-4">
+      <label for="validationDefault02" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="last_name" placeholder="Last Name" required>
+    </div>
+    <div class="col-md-4">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="emailID" placeholder="name@example.com">
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefault01" class="form-label">LinkedIn</label>
+        <input type="text" class="form-control" id="linkedIn"  required>
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefault02" class="form-label">Twitter</label>
+        <input type="text" class="form-control" id="twitter"  required>
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefault03" class="form-label">Phone</label>
+        <input type="text" class="form-control" id="phoneNO" required>
+      </div>
+      <div class="col-md-12">
+        <label for="formFile" class="form-label">Upload Profile Photo</label>
+        <input class="form-control" type="file" id="formFile">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">About</label>
+        <textarea class="form-control" id="Textarea1" rows="3"></textarea>
+      </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+  </form>
+{% endblock %}
