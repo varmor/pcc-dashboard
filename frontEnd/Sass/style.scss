@@ -6,38 +6,20 @@
 main {
 
     margin: 5rem 5% 1rem;
-    // min-height: calc(100vh - 120px);
+
     #info {
-        
+
         .mainBox {
-            margin: 1rem 5% 1rem 5%;
-            padding: 20px;
-            border-radius: 10px;
-            background-color: $bg_sky_blue;
-            display: flex;
-            justify-content: space-between;
+            // padding: 20px;
+            margin: 3rem 5% 1rem 5%;
+            padding: 10px 10px 0px 10px;
+            text-size-adjust: 100%;
+            color: $font_black;
 
-            .smallBox {
-                background-color: $bg_black;
-                padding: 10px;
-                border-radius: 10px;
-                text-size-adjust: 100%;
-                color: $font_white;
-                text-align: center;
-
-                .text {
-
-                    font-size: 20px;
-                    line-height: 23px;
-                }
-
-                .number {
-                    font-size: 25px;
-                    line-height: 28.75px;
-                }
-
+            .text {
+                font-size: 30px;
+                line-height: 23px;
             }
-
         }
     }
 
@@ -47,7 +29,7 @@ main {
         justify-content: center;
 
         .card {
-            height: 444px;
+            height: 540px;
             width: 256px;
             margin: 32px;
             text-align: center;
@@ -58,6 +40,28 @@ main {
             box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; // Shadow33
             transition: color .28s cubic-bezier(.4, 0, .2, 1) 0ms, background-color .28s cubic-bezier(.4, 0, .2, 1) 0ms, border-color .28s cubic-bezier(.4, 0, .2, 1) 0ms, box-shadow .28s cubic-bezier(.4, 0, .2, 1) 0ms;
 
+            .profileBtn {
+                width: 100%;
+                input[type=submit]
+                {
+                    padding: 12px;
+                    text-align: center;
+                    background: transparent;
+                    border: 0.8px solid $font_black;
+                    border-radius: 4px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    outline: none;
+                    color: $font_black;
+                    transition: background-color 0.2s;
+                    margin-top: 20px;
+                    &:hover {
+                        background-color: $bg_black;
+                        color: $font_white;
+                    }
+                }
+
+            }
 
             .header {
                 padding-top: 24px;
@@ -155,17 +159,16 @@ main {
                 max-height: 72px;
                 min-height: 80px;
                 padding: 24px 16px 32px 16px;
-
             }
         }
     }
-    .btn
-    {
+
+    .btn {
         display: flex;
         justify-content: center;
         padding: 32px;
-        input[type=submit]
-        {
+
+        input[type=submit] {
             padding: 16px;
             text-align: center;
             background: transparent;
@@ -176,8 +179,8 @@ main {
             outline: none;
             color: $font_black;
             transition: background-color 0.2s;
-            &:hover
-            {
+
+            &:hover {
                 background-color: $bg_black;
                 color: $font_white;
             }

@@ -9,13 +9,19 @@ html {
     line-height: 1.15;
     overflow-y: scroll;
 }
-body
-{
+
+body {
     display: flex;
     flex-direction: column;
     height: 100vh;
     overflow-x: hidden;
 }
+
+.active {
+    background-color: $color--primary-dark;
+    color: $font_yellow;
+}
+
 .top {
     height: 56px;
     background-color: $bg_black;
@@ -37,6 +43,11 @@ body
             display: flex;
 
             #logo_icon {
+                img
+                {
+                    height: 45px;
+                    width: 45px;
+                }
                 .fa-people-line {
                     color: $font_white;
                 }
@@ -44,7 +55,9 @@ body
 
             #logo_text {
                 margin-left: 6px;
-
+                display: flex;
+                flex-direction: row;
+                align-items: center;
                 #fName {
                     font-size: 32px;
                     font-weight: 300;
@@ -60,7 +73,7 @@ body
                     line-height: 36.8px;
                     color: $bg_sky_blue;
                     border: none;
-                    margin-left: -3px;
+                    margin-left: 3px;
                     transition: color 0.2s;
 
                 }
@@ -84,13 +97,21 @@ body
                 display: flex;
                 flex-direction: row;
                 list-style-type: none;
-                color: $font_white;
                 font-size: 24px;
                 line-height: 28px;
 
                 li {
-                    margin: 0px 32px 0px 0px;
+                    margin: 0px 15px 0px 0px;
                     font-weight: 500;
+                    padding: 10px;
+                    border-radius: 4px;
+
+                    &:hover {
+                        background-color: $color--primary-dark;
+                        color: $font_yellow;
+                        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; // Shadow33
+                        transition: color .28s cubic-bezier(.4, 0, .2, 1) 0ms, background-color .28s cubic-bezier(.4, 0, .2, 1) 0ms, border-color .28s cubic-bezier(.4, 0, .2, 1) 0ms, box-shadow .28s cubic-bezier(.4, 0, .2, 1) 0ms;
+                    }
                 }
 
                 a {
@@ -99,77 +120,16 @@ body
                 }
             }
 
-            
+
         }
     }
-    .search-box {
-        i {
-            color: $font_white;
-        }
 
-        input[type=text] {
-            height: 31px;
-            width: 185px;
-            font-size: 16px;
-            font-weight: 400;
-            border: 2px solid $font_yellow;
-            text-align: center;
-            border-radius: 3px;
-
-            &:focus {
-                outline-color: $bg_sky_blue;
-            }
-        }
-        ::placeholder
-        {
-            margin-left: 40px;
-        }
-    }
 }
 
 @media only screen and (max-width: 760px) {
-    .desktop
-    {
+    .desktop {
         display: none;
     }
-    .mobile
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 0px;
-        margin: 0px 0px 8px 0px;
-    }
-    .search-box {
-        i {
-            color: $font_black;
-            margin-right: 10px;
-        }
+}
 
-        input[type=text] {
-            height: 35px;
-            width: 85%; //85%
-            font-size: 16px;
-            font-weight: 400;
-            border: 2px solid $font_yellow;
-            text-align: center;
-            border-radius: 3px;
-
-            &:focus {
-                outline-color: $bg_sky_blue;
-            }
-        }
-        ::placeholder
-        {
-            margin-left: 40px;
-        }
-    }
-  }
-
-  @media only screen and (min-width: 760px){
-    .mobile
-    {
-        display: none;
-    }
-  }
+@media only screen and (min-width: 760px) {}
