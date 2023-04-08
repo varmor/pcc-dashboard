@@ -29,7 +29,7 @@ main {
         justify-content: center;
 
         .card {
-            height: 540px;
+            height: 444px;
             width: 256px;
             margin: 32px;
             text-align: center;
@@ -42,8 +42,9 @@ main {
 
             .profileBtn {
                 width: 100%;
-                input[type=submit]
-                {
+                padding: 17px;
+
+                input[type=submit] {
                     padding: 12px;
                     text-align: center;
                     background: transparent;
@@ -54,7 +55,7 @@ main {
                     outline: none;
                     color: $font_black;
                     transition: background-color 0.2s;
-                    margin-top: 20px;
+
                     &:hover {
                         background-color: $bg_black;
                         color: $font_white;
@@ -159,6 +160,7 @@ main {
                 max-height: 72px;
                 min-height: 80px;
                 padding: 24px 16px 32px 16px;
+
             }
         }
     }

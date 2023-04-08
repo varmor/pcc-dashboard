@@ -157,7 +157,7 @@ main .cards {
   justify-content: center;
 }
 main .cards .card {
-  height: 540px;
+  height: 444px;
   width: 256px;
   margin: 32px;
   text-align: center;
@@ -172,6 +172,7 @@ main .cards .card {
 }
 main .cards .card .profileBtn {
   width: 100%;
+  padding: 17px;
 }
 main .cards .card .profileBtn input[type=submit] {
   padding: 12px;
@@ -184,7 +185,6 @@ main .cards .card .profileBtn input[type=submit] {
   outline: none;
   color: #000000;
   transition: background-color 0.2s;
-  margin-top: 20px;
 }
 main .cards .card .profileBtn input[type=submit]:hover {
   background-color: #212121;
