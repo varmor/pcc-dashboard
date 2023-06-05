@@ -1,6 +1,0 @@
-@mixin custom--box-shadow($h1,$v1,$b1,$s1,$h2,$v2,$b2,$s2,$h3,$v3,$b3,$s3) 
-{
-    box-shadow: $h1 $v1 $b1 $s1 rgba(0, 0, 0, 0.2),
-    $h2 $v2 $b2 $s2 rgba(0, 0, 0, 0.14),
-    $h3 $v3 $b3 $s3 rgba(0, 0, 0, 0.12);
-}
